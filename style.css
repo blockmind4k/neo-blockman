@@ -1,4 +1,32 @@
-/* Place your CSS styles in this file */
+/* CSS stuff */
+body {
+    background-color: #3a4454;
+    color: #fff0cf;
+}
+
+a:link {
+  color: pink;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #f79b23;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b3ff0f;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #00ffe5;
+  background-color: transparent;
+  text-decoration: underline;
+}
 
 h1 {
     text-align: center;
