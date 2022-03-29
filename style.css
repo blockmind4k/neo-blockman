@@ -1,31 +1,87 @@
 /* CSS stuff */
+:root {
+  --f-red: #cd212a;
+  --bg: #1d1d1d; 
+}
+
 body {
-    background-color: #3a4454;
-    color: #fff0cf;
+    background-color: var(--bg);
+    color: #ffffff;
+    font-family: "Mononoki", monospace;
 }
 
-a:link {
-  color: pink;
-  background-color: transparent;
-  text-decoration: none;
+br {
+    display: block;
+    content: ""; 
+    margin-top: 0; 
 }
 
-a:visited {
-  color: #f79b23;
-  background-color: transparent;
-  text-decoration: none;
+.menu {
+    list-style: none;
 }
 
-a:hover {
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: var(--f-red);
+   color: #ffffff;
+}
+
+.navLinks li a {
+   color: #ffffff;
+}
+
+.logo {
+   font-size: 32px;
+   color: var(--bg);
+   padding: 10px
+}
+
+.logo a:hover{
+  background-color: var(--bg);
+  border-radius: 5px;
+  transition: 0.3s ease;
+  color: var(--f-red);
+}
+
+.menu {
+   display: flex;
+   font-size: 18px;
+}
+
+.menu li:hover {
+   background-color: var(--bg);
+   border-radius: 5px;
+   transition: 0.3s ease;
+}
+
+.menu li {
+   padding: 5px 14px;
+}
+
+p > a:link {
+    color: #b3ff0f;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+p > a:visited {
   color: #b3ff0f;
   background-color: transparent;
   text-decoration: underline;
 }
 
-a:active {
-  color: #00ffe5;
-  background-color: transparent;
-  text-decoration: underline;
+p > a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+p > a:active {
+    color: #b3ff0f;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 h1 {
@@ -50,9 +106,15 @@ p {
     font-weight: normal;
 }
 
+footer {
+    background-color: var(--f-red);
+    color: var(--bg);
+    padding: 5px;
+}
+
 .center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
